@@ -1,1 +1,36 @@
+.doctor-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.doctor-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 54%;
+}
+
+.info{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.info-pair {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.info-pair h4 {
+  margin: 5px;
+}
+
+.doctor-info img {
+  height: 100px;
+  margin-right: 5px;
+}

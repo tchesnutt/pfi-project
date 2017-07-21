@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './header';
+import Doctor from './doctor';
 
 
 
@@ -8,7 +10,8 @@ class Root extends React.Component {
   render() {
     return(
       <div>
-        React is up and running!
+        <Header/>
+        <Doctor/>
       </div>
     );
   }
