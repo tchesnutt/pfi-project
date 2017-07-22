@@ -5,14 +5,20 @@ export default class Similars extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      slide: 0
+      slide: 0,
+      loc: 'thick solid lightblue',
+      spe: 'thick solid white'
     };
 
     this.renderSimilars = this.renderSimilars.bind(this);
   }
 
   handleSelect(num){
-    this.setState({slide: num});
+    if(num === 1){
+      this.setState({slide: num, loc: 'thick solid white', spe: 'thick solid lightblue'});
+    } else {
+      this.setState({slide: num, spe: 'thick solid white', loc: 'thick solid lightblue'});
+    }
   }
 
   renderSimilars(){
@@ -21,11 +27,9 @@ export default class Similars extends React.Component {
         <div>
           {this.props.similars.location.map((doc, idx) => (
             <div className='similar-doc' key={idx}>
-              <h4>{doc.name}</h4>
-              <h4>{doc.location}</h4>
-              <h4>{doc.score}</h4>
+                <h4>{doc.name}, {doc.location}, {doc.score}</h4>
             </div>
-          ))};
+          ))}
         </div>
       )
     } else {
@@ -33,11 +37,9 @@ export default class Similars extends React.Component {
         <div>
           {this.props.similars.specialty.map((doc, idx) => (
             <div className='similar-doc' key={idx}>
-              <h4>{doc.name}</h4>
-              <h4>{doc.location}</h4>
-              <h4>{doc.score}</h4>
+              <h4>{doc.name}, {doc.location}, {doc.score}</h4>
             </div>
-          ))};
+          ))}
         </div>
       )
     }
@@ -46,13 +48,21 @@ export default class Similars extends React.Component {
   render(){
     return(
       <section className='similars'>
-        <h4 className='similars-title' onClick={() => this.handleSelect(0)}>
-          By Location
-        </h4>
-        <h4 className='similars-title' onClick={() => this.handleSelect(1)}>
-          By Specialty
-        </h4>
-        {this.renderSimilars()}
+        <div>
+          <div className='similars-title'>
+            <h4 onClick={() => this.handleSelect(0)}
+              style={{ borderBottom: `${this.state.loc}` }}>
+              By Location
+            </h4>
+            <h4 onClick={() => this.handleSelect(1)}
+              style={{ borderBottom: `${this.state.spe}` }}>
+              By Specialty
+            </h4>
+          </div>
+          <div className='similar-box'>
+            {this.renderSimilars()}
+          </div>
+        </div>
       </section>
     )
   }

@@ -11,7 +11,7 @@ class Doctor extends React.Component {
 
     this.renderArrow = this.renderArrow.bind(this);
     this.handleArrowClick = this.handleArrowClick.bind(this);
-    this.renderSimilar = this.renderSimilar.bind(this);
+    this.renderExpanded = this.renderExpanded.bind(this);
   }
 
   handleArrowClick(){
@@ -38,7 +38,7 @@ class Doctor extends React.Component {
     if(this.state.expanded){
       return (
         <section className='doctor-expanded'>
-          <div>
+          <div className='description'>
             <h4>Description: {this.props.info.description}</h4>
           </div>
           <div>
@@ -49,10 +49,6 @@ class Doctor extends React.Component {
     } else {
       return <div/>
     }
-  }
-
-  renderSimilar(){
-
   }
 
   render() {

@@ -1,5 +1,12 @@
-.header {
+
+.header-title {
+  padding: 15px;
   background-color: lightblue;
+}
+
+.doctor-list {
+  width: 80%;
+  margin-left: 10%;
 }
 
 .doctor-row {
@@ -15,6 +22,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.doctor-row-info i:hover {
+  cursor: pointer;
 }
 
 .doctor-info {
@@ -45,6 +56,38 @@
 .doctor-info img {
   height: 100px;
   margin-right: 5px;
+}
+
+.doctor-expanded {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.description {
+  margin-top: 5px;
+}
+
+.similars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.similar-box {
+  display: flex;
+  flex-wrap: row;
+  justify-content: center;
+}
+
+.similars-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .similars-title:hover {

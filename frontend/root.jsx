@@ -24,10 +24,12 @@ class Root extends React.Component {
 
   render() {
     return(
-      <div>
+      <section className='main-page'>
         <Header/>
-        {this.renderDocs()}
-      </div>
+        <section className='doctor-list'>
+          {this.renderDocs()}
+        </section>
+      </section>
     );
   }
 }

@@ -10,7 +10,7 @@
           "location": [
             { "name": "Eric The Doctor", "score": "3.2", "location": "San Jose"},
             { "name": "Juan The Doctor", "score": "1.3", "location": "San Jose"},
-            { "name": "Potato The Doctor", "score": ".3", "location": "San Jose"}
+            { "name": "Potato The Doctor", "score": "0.3", "location": "San Jose"}
           ],
           "specialty": [
             { "name": "Erica The Doctor", "score": "4.9", "location": "Redwood City" },
@@ -29,7 +29,7 @@
           "location": [
             { "name": "Eric The Doctor", "score": "3.2", "location": "San Jose"},
             { "name": "Juan The Doctor", "score": "1.3", "location": "San Jose"},
-            { "name": "Potato The Doctor", "score": ".3", "location": "San Jose"}
+            { "name": "Potato The Doctor", "score": "0.3", "location": "San Jose"}
           ],
           "specialty": [
             { "name": "Erica The Doctor", "score": "4.9", "location": "Redwood City" },
@@ -48,7 +48,7 @@
           "location": [
             { "name": "Eric The Doctor", "score": "3.2", "location": "San Jose"},
             { "name": "Juan The Doctor", "score": "1.3", "location": "San Jose"},
-            { "name": "Potato The Doctor", "score": ".3", "location": "San Jose"}
+            { "name": "Potato The Doctor", "score": "0.3", "location": "San Jose"}
           ],
           "specialty": [
             { "name": "Erica The Doctor", "score": "4.9", "location": "Redwood City" },
@@ -67,7 +67,7 @@
           "location": [
             { "name": "Eric The Doctor", "score": "3.2", "location": "San Jose"},
             { "name": "Juan The Doctor", "score": "1.3", "location": "San Jose"},
-            { "name": "Potato The Doctor", "score": ".3", "location": "San Jose"}
+            { "name": "Potato The Doctor", "score": "0.3", "location": "San Jose"}
           ],
           "specialty": [
             { "name": "Erica The Doctor", "score": "4.9", "location": "Redwood City" },
@@ -86,7 +86,7 @@
           "location": [
             { "name": "Eric The Doctor", "score": "3.2", "location": "San Jose"},
             { "name": "Juan The Doctor", "score": "1.3", "location": "San Jose"},
-            { "name": "Potato The Doctor", "score": ".3", "location": "San Jose"}
+            { "name": "Potato The Doctor", "score": "0.3", "location": "San Jose"}
           ],
           "specialty": [
             { "name": "Erica The Doctor", "score": "4.9", "location": "Redwood City" },
