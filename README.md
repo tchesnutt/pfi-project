@@ -1,4 +1,4 @@
-[Live](https://pfi-project.herokuapp.com/)
+[Live](http://pfiproject.s3-website-us-east-1.amazonaws.com/)
 
 ### Assumptions
 1) Doctor Relevancy:
