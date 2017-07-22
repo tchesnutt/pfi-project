@@ -1,8 +1,20 @@
+.header {
+  background-color: lightblue;
+}
+
 .doctor-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.doctor-row-info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .doctor-info {
@@ -10,10 +22,10 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 54%;
+  width: 100%;
 }
 
-.info{
+.info {
   width: 70%;
   display: flex;
   flex-direction: row;
@@ -33,4 +45,8 @@
 .doctor-info img {
   height: 100px;
   margin-right: 5px;
+}
+
+.similars-title:hover {
+  cursor: pointer;
 }

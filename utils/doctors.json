@@ -1,0 +1,99 @@
+{
+    "doctors": [
+      {
+        "name": "Henry The Doctor",
+        "specialty": "Podiatrist",
+        "score": "2.3",
+        "location": "San Jose",
+        "description": "Not as scary as he looks.",
+        "similars": {
+          "location": [
+            { "name": "Eric The Doctor", "score": "3.2", "location": "San Jose"},
+            { "name": "Juan The Doctor", "score": "1.3", "location": "San Jose"},
+            { "name": "Potato The Doctor", "score": ".3", "location": "San Jose"}
+          ],
+          "specialty": [
+            { "name": "Erica The Doctor", "score": "4.9", "location": "Redwood City" },
+            { "name": "Robert The Doctor", "score": "4.9", "location": "Oakland" },
+            { "name": "Michael The Doctor", "score": "4.7", "location": "Marin" }
+          ]
+        }
+      },
+      {
+        "name": "Henry The Doctor",
+        "specialty": "Podiatrist",
+        "score": "2.3",
+        "location": "San Jose",
+        "description": "Not as scary as he looks.",
+        "similars": {
+          "location": [
+            { "name": "Eric The Doctor", "score": "3.2", "location": "San Jose"},
+            { "name": "Juan The Doctor", "score": "1.3", "location": "San Jose"},
+            { "name": "Potato The Doctor", "score": ".3", "location": "San Jose"}
+          ],
+          "specialty": [
+            { "name": "Erica The Doctor", "score": "4.9", "location": "Redwood City" },
+            { "name": "Robert The Doctor", "score": "4.9", "location": "Oakland" },
+            { "name": "Michael The Doctor", "score": "4.7", "location": "Marin" }
+          ]
+        }
+      },
+      {
+        "name": "Henry The Doctor",
+        "specialty": "Podiatrist",
+        "score": "2.3",
+        "location": "San Jose",
+        "description": "Not as scary as he looks.",
+        "similars": {
+          "location": [
+            { "name": "Eric The Doctor", "score": "3.2", "location": "San Jose"},
+            { "name": "Juan The Doctor", "score": "1.3", "location": "San Jose"},
+            { "name": "Potato The Doctor", "score": ".3", "location": "San Jose"}
+          ],
+          "specialty": [
+            { "name": "Erica The Doctor", "score": "4.9", "location": "Redwood City" },
+            { "name": "Robert The Doctor", "score": "4.9", "location": "Oakland" },
+            { "name": "Michael The Doctor", "score": "4.7", "location": "Marin" }
+          ]
+        }
+      },
+      {
+        "name": "Henry The Doctor",
+        "specialty": "Podiatrist",
+        "score": "2.3",
+        "location": "San Jose",
+        "description": "Not as scary as he looks.",
+        "similars": {
+          "location": [
+            { "name": "Eric The Doctor", "score": "3.2", "location": "San Jose"},
+            { "name": "Juan The Doctor", "score": "1.3", "location": "San Jose"},
+            { "name": "Potato The Doctor", "score": ".3", "location": "San Jose"}
+          ],
+          "specialty": [
+            { "name": "Erica The Doctor", "score": "4.9", "location": "Redwood City" },
+            { "name": "Robert The Doctor", "score": "4.9", "location": "Oakland" },
+            { "name": "Michael The Doctor", "score": "4.7", "location": "Marin" }
+          ]
+        }
+      },
+      {
+        "name": "Henry The Doctor",
+        "specialty": "Podiatrist",
+        "score": "2.3",
+        "location": "San Jose",
+        "description": "Not as scary as he looks.",
+        "similars": {
+          "location": [
+            { "name": "Eric The Doctor", "score": "3.2", "location": "San Jose"},
+            { "name": "Juan The Doctor", "score": "1.3", "location": "San Jose"},
+            { "name": "Potato The Doctor", "score": ".3", "location": "San Jose"}
+          ],
+          "specialty": [
+            { "name": "Erica The Doctor", "score": "4.9", "location": "Redwood City" },
+            { "name": "Robert The Doctor", "score": "4.9", "location": "Oakland" },
+            { "name": "Michael The Doctor", "score": "4.7", "location": "Marin" }
+          ]
+        }
+      }
+    ]
+}

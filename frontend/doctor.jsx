@@ -1,4 +1,5 @@
 import React from 'react';
+import Similars from './similars';
 
 
 class Doctor extends React.Component {
@@ -10,6 +11,7 @@ class Doctor extends React.Component {
 
     this.renderArrow = this.renderArrow.bind(this);
     this.handleArrowClick = this.handleArrowClick.bind(this);
+    this.renderSimilar = this.renderSimilar.bind(this);
   }
 
   handleArrowClick(){
@@ -27,36 +29,60 @@ class Doctor extends React.Component {
                 onClick={this.handleArrowClick}/>;
     } else {
       return <i className="fa fa-angle-double-up"
-              style={{fontSize: '36px'}}
-              onClick={this.handleArrowClick}/>;
+                style={{fontSize: '36px'}}
+                onClick={this.handleArrowClick}/>;
     }
+  }
+
+  renderExpanded(){
+    if(this.state.expanded){
+      return (
+        <section className='doctor-expanded'>
+          <div>
+            <h4>Description: {this.props.info.description}</h4>
+          </div>
+          <div>
+            <Similars similars={this.props.info.similars}/>
+          </div>
+        </section>
+      )
+    } else {
+      return <div/>
+    }
+  }
+
+  renderSimilar(){
+
   }
 
   render() {
     return(
       <section className='doctor-row'>
-        <div className='doctor-info'>
-          <img src='https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX6162463.jpg'/>
-          <div className='info'>
-            <div className='info-pair'>
+        <div className='doctor-row-info'>
+          <div className='doctor-info'>
+            <img src='https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX6162463.jpg'/>
+            <div className='info'>
+              <div className='info-pair'>
                 <h4> Name </h4>
-                <h4> Henry The Doctor </h4>
-            </div>
-            <div className='info-pair'>
-              <h4> Speciality </h4>
-              <h4> Feet </h4>
-            </div>
-            <div className='info-pair'>
-              <h4> Location </h4>
-              <h4> San Jose </h4>
-            </div>
-            <div className='info-pair'>
-              <h4> Score </h4>
-              <h4> 2.3 </h4>
+                <h4> {this.props.info.name} </h4>
+              </div>
+              <div className='info-pair'>
+                <h4> Speciality </h4>
+                <h4> {this.props.info.specialty} </h4>
+              </div>
+              <div className='info-pair'>
+                <h4> Location </h4>
+                <h4> {this.props.info.location} </h4>
+              </div>
+              <div className='info-pair'>
+                <h4> Score </h4>
+                <h4> {this.props.info.score} </h4>
+              </div>
             </div>
           </div>
+          {this.renderArrow()}
         </div>
-        {this.renderArrow()}
+        {this.renderExpanded()}
       </section>
     )
   }
